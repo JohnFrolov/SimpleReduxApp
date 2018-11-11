@@ -1,0 +1,26 @@
+{
+    "compilerOptions": {
+        "outDir": "./dist/",
+        "sourceMap": true,
+        "noImplicitAny": false,
+        "allowJs": true,
+        "module": "ES6",
+        "target": "ES2016",
+        "jsx": "react",
+        "moduleResolution": "node",
+        "types": [
+            "node",
+            "webpack-env",
+            "react",
+            "react-router",
+            "react-dom",
+            "react-bootstrap",
+            "react-redux",
+            "redux",
+          ]
+    },
+    "charset": "utf8",
+    "include": [
+        "./src/**/*"
+    ]
+}

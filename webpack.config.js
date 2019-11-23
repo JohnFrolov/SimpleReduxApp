@@ -1,3 +1,4 @@
+require('dotenv').config();
 const webpack = require('webpack');
 
 module.exports = {
@@ -37,7 +38,10 @@ module.exports = {
     filename: 'bundle.js'
   },
   plugins: [
-    new webpack.HotModuleReplacementPlugin()
+    new webpack.HotModuleReplacementPlugin(),
+    new webpack.DefinePlugin({
+      'process.env.API_KEY': JSON.stringify(process.env.API_KEY),
+    })
   ],
   devServer: {
     contentBase: './dist',
